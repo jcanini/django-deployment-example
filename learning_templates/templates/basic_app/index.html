@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+{% extends "basic_app/base.html"%}
+	{% block body_block %}
+	{% load my_extras %}
+	<h1>Templates</h1>	
+	<h2>There is a custom filter on this page.</h2>	
+	<h1>{{ text|slash:'hello' }}</h1>
+	<h1>{{ number|add:"56"}}</h1>
+	{% endblock %}
